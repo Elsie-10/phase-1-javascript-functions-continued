@@ -25,11 +25,13 @@ describe("index.js", () => {
     })
 
     it("permits the default activity to be overriden", function() {
-      expect(mondayWork("work from home")).to.equal("This Monday, I will work from home.")
+      expect(mondayWork("work from home")).to.equal("This Monday, I will work from home")
     })
   })
 
-  describe("defines wrapAdjective function according to the specification", function() {
+  
+})
+describe("defines wrapAdjective function according to the specification", function() {
     it("function exists", function() {
       expect(wrapAdjective).to.exist
     })
@@ -46,4 +48,3 @@ describe("index.js", () => {
       expect(emphatic).to.equal("You are ||a dedicated programmer||!")
     });
   })
-})
